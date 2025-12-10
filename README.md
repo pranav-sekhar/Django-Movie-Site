@@ -7,3 +7,8 @@ A web application built using Django that manages movie information with basic C
 - Django admin panel integration
 - User-friendly interface using HTML & CSS
 - Database integration (SQLite)
+
+## Output Preview
+
+![Project Output](Output-movieslist.png)
+
