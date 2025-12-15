@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1{color:rgb(48, 21, 157);font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+        button{background-color: cyan;color: darkblue;border-color: blue;padding: 6px;cursor: pointer;}
+    </style>
 </head>
-<body>
-    <h2>REGISTER USER</h2>
+<body bgcolor="turquoise">
+    <h1>Create New Account</h1>
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
