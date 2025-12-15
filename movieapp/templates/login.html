@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        a{text-decoration: none;color:rgb(0, 4, 211);font-weight: bold;}
+        h1{color:rgb(48, 21, 157);font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 40px;}
+        h2{font-family:'Times New Roman', Times, serif;color:white;}
+        h3{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+        button{background-color: cyan;color:darkblue;border-color: blue;padding: 6px;cursor: pointer;}
+    </style>
 </head>
-<body>
-    <h2>LOGIN</h2>
+<body bgcolor="turquoise">
+    <h1>Welcome to Pranav’s Movie Vault – Your Movie Collection Manager
+    <h2>Explore movies, add new entries, update your collection,
+    and manage everything in one place.</h2>
+    <h3>Login to Continue</h3>
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Login</button>
-        <p><a href="{% url 'register' %}">Register User</a></p>
+        <p><a href="{% url 'register' %}">New User ? Register </a></p>
     </form>
 </body>
 </html>
