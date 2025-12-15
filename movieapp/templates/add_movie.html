@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{background-color: rgb(117, 235, 104);}
+        h1{color:rgb(7, 106, 7);}
+        button{background-color: greenyellow;color: green;padding: 6px;font-size: 15px;cursor: pointer;}
+    </style>
 </head>
 <body>
-    <h3>Add Movie</h3>
+    <h1>Add Movie Details</h1>
     <form method="POST" enctype="multipart/form-data"> <!--enctype to upload img files-->
         {% csrf_token %}
         {{form.as_p}}
