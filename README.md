@@ -10,5 +10,5 @@ A web application built using Django that manages movie information with basic C
 
 ## Output Preview
 
-![Project Output](Output-movieslist.png)
+![Project Output](output-moviesite.png)
 
