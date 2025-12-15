@@ -5,22 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        a{text-decoration: none;}
+        body{background-color:rgb(42, 36, 36);color: rgb(233, 254, 119);font-size: 20px;}
+        a{text-decoration: none;color: red;}
+        h1{color: aquamarine; padding:6px;}
+        .trail{color:dodgerblue;}
+        h4{padding:6px; color:mediumspringgreen;}
+        .des{line-height: 1.8;color: yellow;}
     </style>
 </head>
 <body>
-    <h2>{{ movie.title }}</h2>
-    <h4>{{ movie.description }}</h4>
+    <h1>{{ movie.title }} </h1>
+    <h4 class="des">{{ movie.description }}</h4>
     <h4>Actors : {{movie.actors}}</h4>
     <h4>Category : {{movie.category.genre}}</h4>
     <h4>Release date : {{movie.release_date}}</h4>
     <h4>Rating : {{movie.rating}}</h4>
     <h4>Added by : {{movie.added_by.username}}</h4>
-    <h4><a href="{{movie.trailer}}">Watch Trailer</a></h4>
+    <h4><a href="{{movie.trailer}}" class="trail">Watch Trailer</a></h4>
     {% if movie.added_by == user %}
-        <a href="{% url 'edit_movie' movie.id %}">Edit</a>
+        <a href="{% url 'edit_movie' movie.id %}">Edit</a><p></p>
         <a href="{% url 'delete_movie' movie.id %}">Delete</a>
     {% endif %}
-    <h4><a href="{% url 'movie_list' %}">To Movies List</a></h4>
+    <!--<h4><a href="{% url 'movie_list' %}">To Movies List</a></h4>-->
 </body>
 </html>
