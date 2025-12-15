@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{background-color: rgb(117, 235, 104);}
+        h1{color:rgb(7, 106, 7);}
+    </style>
 </head>
 <body>
-    <h3>Edit Movie - {{movie.title}}</h3> <!--shows movie title while edit-->
+    <h1>Edit Movie - {{movie.title}}</h1> <!--shows movie title while edit-->
     <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
