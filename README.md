@@ -8,6 +8,11 @@ A web application built using Django that manages movie information with basic C
 - User-friendly interface using HTML & CSS
 - Database integration (SQLite)
 
+## Deployment
+- Hosted at PythonAnywhere
+- Live demo : https://pranavsekhar.pythonanywhere.com/
+
+
 ## Output Preview
 
 ![Project Output](output.png)
