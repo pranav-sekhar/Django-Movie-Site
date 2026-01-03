@@ -9,7 +9,7 @@ A web application built using Django that manages movie information with basic C
 - Database integration (SQLite)
 
 ## Deployment
-- Hosted at PythonAnywhere
+- Platform : PythonAnywhere
 - Live demo : https://pranavsekhar.pythonanywhere.com/
 
 
